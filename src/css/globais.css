@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    color: #FFF;
+    font-weight: 300;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--fonte-primaria);
+    background-color: var(--cor-fundo);
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+  }
+
+.redes-sociais a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    color: #FFF;
+    margin: 0 4px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .redes-sociais a i {
+    line-height: 40px;
+  }
+  
+  .redes-sociais a:hover {
+    color: var(--cor-primaria);
+  }
+
+  .outer-shadow {
+    box-shadow: 3px 3px #222327, -3px -3px 3px #454545;
+  }
+  
+  .inner-shadow {
+    box-shadow: inset 3px 3px 3px #222327, inset -3px -3px 3px #454545;
+  }
+
+  .section{
+    padding: 60px 0 70px;
+  }
+
+  .section-title {
+    text-align: center;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 60px 0;
+  }
+  
+  .section-title h2 {
+    font-size: 45px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .btn-cv{
+    background-color: #4676e3;
+    max-width: 150px;
+    position: fixed;
+    border-radius: 15px;
+    padding: 10px;
+    right: 15px;
+    bottom: 10px;
+  }
+
+  .btn-cv a i{
+    margin-left: 10px;
+    color: var(--cor-fundo);
+  }
+
+  .btn-cv:hover{
+    opacity: 0.8;
+    cursor: pointer;
+  }

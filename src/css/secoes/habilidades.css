@@ -1,0 +1,60 @@
+.habilidades .container-habilidades {    
+    text-align: center;    
+    display: flex;
+    justify-content: center;    
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.habilidades .container-habilidades .informacoes{
+    max-width: 1140px; 
+    padding: 10px;   
+}
+
+
+.habilidades .container-habilidades .informacoes p,
+.habilidades .container-habilidades .informacoes h3,
+.habilidades .container-habilidades .informacoes .logo i{
+    transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+
+.habilidades .container-habilidades .informacoes:hover h3,
+.habilidades .container-habilidades .informacoes:hover .logo i{
+    color: var(--cor-primaria);
+    cursor: pointer;
+}
+
+.habilidades .container-habilidades .informacoes h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    color: var(--cor-primaria);      
+}
+
+.habilidades .container-habilidades .informacoes p {
+    font-size: 14px;
+    font-family: var(--fonte-secundaria); 
+    opacity: 0;
+    width: 200px;
+}
+
+.habilidades .container-habilidades .informacoes.informacoes.javascript:hover p,
+.habilidades .container-habilidades .informacoes.informacoes.html:hover p,
+.habilidades .container-habilidades .informacoes.informacoes.css:hover p,
+.habilidades .container-habilidades .informacoes.informacoes.github:hover p,
+.habilidades .container-habilidades .informacoes.informacoes.git:hover p{
+    opacity: 1;
+    color: #FFF;
+    background-color: #4676e3;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.habilidades .container-habilidades .informacoes .logo i {
+    font-size: 80px;
+}

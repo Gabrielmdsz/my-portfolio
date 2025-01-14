@@ -1,0 +1,21 @@
+:root {
+    --cor-primaria: #5a5fa3;
+    --cor-secundaria: #5b9eec;    
+    --cor-branca: #FFF;
+    --cor-fundo: #36373c;    
+    --cor-fundo-cinza-claro: #44454a;    
+}
+
+:root {
+    --fonte-primaria: 'Noto Sans', sans-serif;
+    --fonte-secundaria: 'Nunito', sans-serif;
+    --fonte-gigante: 45px;
+    --fonte-extra-grande: 30px;
+    --fonte-grande: 24px;
+    --fonte-normal: 16px;
+  }
+  
+  :root {
+    --mobile-padding: 30px;
+  }
+

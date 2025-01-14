@@ -1,0 +1,106 @@
+.projetos .container-projetos {
+    display: grid;        
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin: 0 auto;
+    grid-gap: 20px;   
+    max-width: 1140px;
+}
+
+
+@media(max-width: 1280px) { 
+    .projetos .container-projetos {
+        padding: 0 var(--mobile-padding);
+    }
+}
+
+@media(max-width: 840px){
+    .projetos .container-projetos .projeto{
+        margin-top: 55px;
+    }
+}
+
+.projetos .container-projetos .projeto {
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;           
+}
+
+.projetos .container-projetos .projeto:hover,
+.projetos .container-projetos .projeto:hover .informacoes-projeto {
+    opacity: 0.8;
+}
+
+.projetos .container-projetos .projeto img {
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+.projetos .container-projetos .projeto .informacoes-projeto {
+    padding: 20px 20px;    
+    background-color: #0b0b0b;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;    
+    transition: all .3s ease;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.projetos .container-projetos .projeto .informacoes-projeto p{
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.projetos .container-projetos .projeto .informacoes-projeto p a:hover{
+    color: var(--cor-primaria);
+}
+
+.projetos .container-projetos .projeto h3{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--fonte-primaria);    
+    position: absolute;      
+    opacity: 0.7;
+    background-color: var(--cor-primaria);
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    bottom: 0;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.projetos .container-projetos .projeto .into-projeto{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: var(--fonte-secundaria);
+}
+
+.into-projeto ul{
+    display: flex;
+    gap: 20px;
+}
+
+.into-projeto ul li{
+    padding: 8px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.into-projeto ul li:hover{
+    color: #4676e3;
+    border-color: #4676e3;
+    cursor: pointer;
+    justify-content: flex-start;
+}
